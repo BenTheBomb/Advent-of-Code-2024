@@ -1,7 +1,7 @@
 array1 = []
 array2 = []
 
-with open("Day1.txt", "r") as f:
+with open("day1.txt", "r") as f:
     for line in f:
         strArray = line.split()
         array1.append(int(strArray[0]))
