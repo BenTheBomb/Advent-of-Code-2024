@@ -13,6 +13,6 @@ array2.sort()
 count = 0
 for i in range(len(array1)):
     count += abs(array1[i] - array2[i])
-    print(i)
-    print(count)
+
+print(count)
 
