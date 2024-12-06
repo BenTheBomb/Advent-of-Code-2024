@@ -15,9 +15,7 @@ print count
 '''
 count = 0
 
-def safe_check(line):
-    strArray = line.split()
-    intArray = [int(x) for x in strArray]
+def safe_check():
     subArray = []
     for i in range(len(intArray) - 1):
         subArray.append(intArray[i+1] - intArray[i])
@@ -29,6 +27,8 @@ def safe_check(line):
 
 with open("day2.txt","r") as f:
     for line in f:
-        count += safe_check(line)
+        strArray = line.split()
+        intArray = [int(x) for x in strArray]
+        count += safe_check()
 
 print(count)
