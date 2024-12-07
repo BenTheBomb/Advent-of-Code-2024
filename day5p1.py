@@ -30,10 +30,7 @@ def check(page):
                         break
         if valid == False:
             break
-    if valid:
-        correct.append(page)
-    else:
-        return 0
+    return valid
 
 
 with open('day5.txt','r') as f:
@@ -51,7 +48,8 @@ for i in range(len(pages)):
 
 correct = []
 for page in pages:
-    check(page)
+    if check(page):
+        correct.append(page)
 
 sum = 0
 for item in correct:
