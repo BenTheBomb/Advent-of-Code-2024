@@ -34,8 +34,6 @@ xbound = 129
 ybound = 129
         
 while (xpos > -1) and (xpos < xbound) and (ypos > -1) and (ypos < ybound):
-    print(xpos,ypos)
-    print(dir)
     if dir == '^':
         if map[ypos-1][xpos] == '#':
             # rotate if in front of '#'
